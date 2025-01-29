@@ -5,7 +5,6 @@ const AdmZip = require("adm-zip");
 const parser = require("@babel/parser");
 const cors = require("cors");
 const fs = require("fs");
-// const path = require("path");
 
 const app = express();
 const upload = multer({ dest: "uploads/" });
