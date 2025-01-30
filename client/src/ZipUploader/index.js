@@ -22,7 +22,6 @@ export default function ZipUploader() {
       const response = await axios.post("http://localhost:5000/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
-      console.log(response, 'response?')
       setMessage(JSON.stringify(response.data, null, 2));
     } catch (error) {
       setMessage("Error uploading file");
