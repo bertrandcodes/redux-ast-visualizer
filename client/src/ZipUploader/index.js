@@ -17,7 +17,6 @@ export default function ZipUploader() {
 
     const formData = new FormData();
     formData.append("zipFile", file);
-    // File appended
 
     try {
       const response = await axios.post("http://localhost:5000/upload", formData, {
